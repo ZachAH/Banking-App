@@ -58,6 +58,7 @@ const account1 = {
   const inputClosePin = document.querySelector('.form__input--pin');
 
 const displayMovement = function(movements) {
+  containerMovements.innerHTML = '';
   
   movements.forEach(function(mov, i) {
     const type = mov > 0 ? 'deposit' : 'withdrawal'
