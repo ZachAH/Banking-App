@@ -73,6 +73,12 @@ const displayMovement = function (movements) {
   });
 };
 displayMovement(account1.movements);
+
+const user = 'Steven Thomas Williams';
+const username = user.toLowerCase().split(' ');
+
+console.log(username);
+
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
