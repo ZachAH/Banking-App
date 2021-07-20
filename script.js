@@ -138,9 +138,13 @@ console.log(withdrawals);
 
 //accumulator -> snowball
 console.log(movements);
-const balance = movements.reduce(function (acc, cur, i, arr) {
-  return acc + cur;
-}, 0);
+
+const balance = movements.reduce((acc, cur) => acc + cur, 0);
+
+//above is the same function using arrow functions
+// const balance = movements.reduce(function (acc, cur, i, arr) {
+//   return acc + cur;
+// }, 0);
 console.log(balance);
 
 let balance2 = 0;
